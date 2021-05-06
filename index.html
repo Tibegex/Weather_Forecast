@@ -15,37 +15,55 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Weather Dashboard</h1>
+    <header
+      class="bg-primary text-white justify-content-center d-flex p-10 align-items-center"
+    >
+      <h1 class="p-10">Weather Dashboard</h1>
     </header>
-    <aside>
-      <section>
-        <h2>Search City</h2>
-        <input id="input" type="text" />
-        <button id="serachBtn">Search</button>
-      </section>
-      <section>
-        <ul id="searchHistory"></ul>
-      </section>
-    </aside>
-
-    <main>
-      <section>
-        <h2 id="city"></h2>
-        <h6 class="cityWeather"></h6>
-        <h6 class="cityWeather"></h6>
-        <h6 class="cityWeather"></h6>
-        <h6 class="cityWeather"></h6>
+    <main class="d-flex">
+      <section class="d-flex flex-column p-3">
+        <h2>Search for a City:</h2>
+        <input id="citySearch" type="text" />
+        <button
+          class="btn btn-primary btn-sm w-50 align-self-center"
+          type="submit"
+        >
+          Search
+        </button>
+        <section class="d-flex">
+          <ul class="align-itmes-center" id="searchHistory">
+            <li id="searchedCity">test</li>
+          </ul>
+        </section>
       </section>
 
-      <section>
-        <h3>5-Day Forecast:</h3>
-      </section>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="d-flex">
+        <section class="d-flex flex-column">
+          <h2 id="city"></h2>
+          <h6 class="cityWeather"></h6>
+          <h6 class="cityWeather"></h6>
+          <h6 class="cityWeather"></h6>
+          <h6 class="cityWeather"></h6>
+        </section>
+
+        <section class="d-flex">
+          <div class="currentWeather">
+            <h3 class="cityName"></h3>
+            <h6 class="temp"></h6>
+            <h6 class="wind"></h6>
+            <h6 class="huminity"></h6>
+            <h6 class="uvIndex"></h6>
+          </div>
+
+          <div class="5dayForecast">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </section>
+      </div>
     </main>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script
