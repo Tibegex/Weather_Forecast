@@ -16,48 +16,49 @@
   </head>
   <body>
     <header
-      class="bg-primary text-white justify-content-center d-flex p-10 align-items-center"
+      class="
+        bg-primary
+        text-white
+        justify-content-center
+        d-flex
+        p-10
+        align-items-center
+      "
     >
       <h1 class="p-10">Weather Dashboard</h1>
     </header>
-    <main class="d-flex">
-      <section class="d-flex flex-column p-3">
+    <main class="row">
+      <section class="col-2">
         <h2>Search for a City:</h2>
         <input id="citySearch" type="text" />
-        <button
-          class="btn btn-primary btn-sm w-50 align-self-center"
-          type="submit"
-        >
+        <button class="btn btn-primary btn-sm align-self-center" type="submit">
           Search
         </button>
-        <section class="d-flex">
+        <section class="">
           <ul class="align-itmes-center" id="searchHistory">
             <li id="searchedCity"></li>
           </ul>
         </section>
       </section>
 
-      <div class="d-flex">
-        <section class="d-flex flex-column">
+      <!-- <div class="col">
+        <section class="">
           <h2 id="city"></h2>
           <h6 class="cityWeather"></h6>
           <h6 class="cityWeather"></h6>
           <h6 class="cityWeather"></h6>
           <h6 class="cityWeather"></h6>
         </section>
-      </div>
-      <div>
-        <section class="d-flex">
-          <div class="currentWeather d-flex">
-            <h3 class="cityName"></h3>
-            <h6 class="temp"></h6>
-            <h6 class="wind"></h6>
-            <h6 class="humidity"></h6>
-            <h6 class="uvIndex"></h6>
-          </div>
-
-          <div class="fiveDayForecast">
-            <div class="card day1" style="width: 18rem">
+      </div> -->
+      <div class="currentWeather col">
+        <h3 class="cityName"></h3>
+        <h6 class="temp"></h6>
+        <h6 class="wind"></h6>
+        <h6 class="humidity"></h6>
+        <h6 class="uvIndex"></h6>
+        <section class="">
+          <div class="fiveDayForecast row">
+            <div class="card day1 col-1 m-1">
               <div class="card-body">
                 <h5 class="card-title date"></h5>
                 <img class="card-text icon" />
@@ -66,7 +67,7 @@
                 <p class="card-text humidity"></p>
               </div>
             </div>
-            <div class="card day2" style="width: 18rem">
+            <div class="card day2 col-1 m-1">
               <div class="card-body">
                 <h5 class="card-title date"></h5>
                 <img class="card-text icon" />
@@ -75,7 +76,7 @@
                 <p class="card-text humidity"></p>
               </div>
             </div>
-            <div class="card day3" style="width: 18rem">
+            <div class="card day3 col-1 m-1">
               <div class="card-body">
                 <h5 class="card-title date"></h5>
                 <img class="card-text icon" />
@@ -84,7 +85,7 @@
                 <p class="card-text humidity"></p>
               </div>
             </div>
-            <div class="card day4" style="width: 18rem">
+            <div class="card day4 col-1 m-1">
               <div class="card-body">
                 <h5 class="card-title date"></h5>
                 <img class="card-text icon" />
@@ -93,7 +94,7 @@
                 <p class="card-text humidity"></p>
               </div>
             </div>
-            <div class="card day5" style="width: 18rem">
+            <div class="card day5 col-1 m-1">
               <div class="card-body">
                 <h5 class="card-title date"></h5>
                 <img class="card-text icon" />
